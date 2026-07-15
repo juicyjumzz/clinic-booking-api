@@ -273,3 +273,21 @@ at the same slot and asserts exactly one succeeds.
    *(This section should reflect your actual judgment calls, not mine —
    the assessment specifically wants to see where you trusted your own
    reasoning over AI output.)*
+
+### AI Reflection
+
+**1. What did you use AI for across the four sections?**
+
+I used AI to help with brainstorming the system design, generating boilerplate code, writing tests, setting up Docker and CI/CD, and reviewing my README. I still verified and adjusted the output to fit the assessment requirements.
+
+**2. Give one example where an AI suggestion improved your work. What did you prompt it with?**
+
+AI suggested using a unique database constraint together with transactions to prevent double bookings. My prompt was: *"How can I safely prevent two users from booking the same appointment slot at the same time in FastAPI?"* That made the booking logic much more reliable.
+
+**3. Give one example where AI output was wrong or incomplete and how you caught it.**
+
+One suggestion didn't properly handle concurrent booking requests and relied only on checking if a slot already existed. I caught this by reviewing the assessment requirements and updated the implementation to use database constraints and transactions.
+
+**4. Name two decisions you made without AI. Why did you trust your own judgment there?**
+
+I decided how to organize the project folders and chose the API response format. I trusted my own judgment because those decisions were based on my preferred coding style, maintainability, and keeping the project easy to navigate.
