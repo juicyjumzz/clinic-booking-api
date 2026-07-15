@@ -1,0 +1,21 @@
+# Render "Blueprint" file. Render can auto-detect this file and set up the
+# service with these settings when you connect the repo, instead of you
+# clicking through each field manually in the dashboard.
+#
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: clinic-booking-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./clinic.db
+      - key: CLINIC_TIMEZONE
+        value: Africa/Nairobi
+      - key: SLOT_MINUTES
+        value: "30"
+      - key: MIN_LEAD_TIME_MINUTES
+        value: "60"
+    healthCheckPath: /health
