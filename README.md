@@ -195,7 +195,7 @@ at the same slot and asserts exactly one succeeds.
 
 ## Section 3 — Deployment & CI/CD
 
-**Live URL:** `<< FILL IN AFTER YOU DEPLOY — see steps below >>`
+**Live URL:** `https://clinic-booking-api-giwq.onrender.com/`
 
 ### Deploying to Render
 
@@ -206,7 +206,7 @@ at the same slot and asserts exactly one succeeds.
    health check path, environment variables).
 3. Click **Apply** / **Create Web Service**. Wait for the first build+deploy
    to finish, then copy the public URL Render assigns
-   (`https://clinic-booking-api-xxxx.onrender.com`) into this README.
+   (`https://clinic-booking-api-giwq.onrender.com/`) into this README.
 4. In the Render dashboard for this service, go to **Settings > Deploy
    Hook**, copy the deploy hook URL, and add it to your GitHub repo as a
    secret named `RENDER_DEPLOY_HOOK_URL`
